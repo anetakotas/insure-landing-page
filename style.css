@@ -184,21 +184,6 @@ nav a:hover {
   background-color: white;
 }
 
-.bg-container2 {
-  position: absolute;
-  left: 0px;
-  -webkit-transform: translate(0, -490px);
-          transform: translate(0, -490px);
-}
-
-.bg-pattern2 {
-  position: absolute;
-  width: 195px;
-  height: 504px;
-  left: 0px;
-  background-repeat: no-repeat;
-}
-
 .section-2 h1 {
   font-size: 4.5em;
   font-family: 'DM Serif Display', serif;
@@ -320,8 +305,12 @@ footer {
   padding-bottom: 30px;
 }
 
+.footer-nav svg {
+  margin: 0 auto;
+}
+
 .footer-icons svg {
-  margin-left: 12px;
+  margin: 0 6px;
 }
 
 .footer-icons path:hover {
@@ -633,17 +622,6 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
   }
-  .img-container {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .intro-img {
-    padding: 0;
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-    min-width: 510px;
-  }
   .section-1:after {
     display: none;
   }
@@ -655,6 +633,17 @@ footer {
     -webkit-transform: translate(0, 10%);
             transform: translate(0, 10%);
     margin: 0 0 40px 0;
+  }
+  .img-container {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .intro-img {
+    padding: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    min-width: 510px;
   }
   .section-2 {
     height: 1500px;
@@ -685,15 +674,19 @@ footer {
     height: 330px;
     background-image: url(/images/bg-pattern-how-we-work-mobile.svg);
   }
+  .sec-3-content {
+    font-size: 3em;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
   .sec-3-button {
     -webkit-box-flex: 0.5;
         -ms-flex: 0.5;
             flex: 0.5;
   }
-  .sec-3-content {
-    font-size: 3em;
-    text-align: center;
-    margin-top: 30px;
+  .sec-3-button a {
+    margin: 10px;
   }
   footer {
     height: 1200px;
@@ -746,6 +739,9 @@ footer {
     padding: 0;
     cursor: pointer;
   }
+  .links {
+    display: none;
+  }
   .mobile-menu {
     position: absolute;
     background-color: #2b282f;
@@ -776,24 +772,14 @@ footer {
   .button1 {
     margin-left: 0;
   }
-  .img-container {
-    display: none;
-  }
-  .links {
-    display: none;
-  }
-  .bg-container {
-    display: none;
-  }
   .section-1 {
     height: 600px;
   }
   .section-1 h1 {
     font-size: 3.8em;
   }
-  .bg-container2 {
-    width: 100px;
-    height: 350px;
+  .img-container {
+    display: none;
   }
   .sec-2-container {
     -webkit-box-orient: vertical;
@@ -854,7 +840,6 @@ footer {
             align-items: center;
   }
   .footer-nav div:nth-child(1) {
-    margin-left: 12px;
     margin-bottom: 25px;
   }
   .lists-wrap {
@@ -892,14 +877,14 @@ footer {
   .section-2 h1 {
     font-size: 3.3em;
   }
+  .section-2 h3 {
+    font-size: 1.6em;
+  }
   .advant-wrap {
     text-align: center;
   }
   .advant-wrap:nth-child(2) {
     margin: 0 20px;
-  }
-  .section-2 h3 {
-    font-size: 1.6em;
   }
   .section-3 {
     height: 200px;
@@ -933,13 +918,6 @@ footer {
         -ms-flex: 2;
             flex: 2;
   }
-  .bg-pattern2 img {
-    height: 80%;
-    margin-top: 50px;
-  }
-  .bg-pattern1 img {
-    height: 75%;
-  }
 }
 
 @media (max-width: 1920px) and (min-width: 1740px) {
@@ -955,9 +933,6 @@ footer {
   .button1 {
     padding: 15px 30px;
   }
-  .button2 {
-    padding: 15px 30px;
-  }
   .section-1 {
     height: 800px;
     padding-bottom: 120px;
@@ -968,28 +943,12 @@ footer {
   .content-sec1 {
     padding-top: 120px;
   }
-  .bg-container {
-    width: 550px;
-  }
-  .bg-pattern1 {
-    -webkit-transform: translate(0, 6.7%);
-            transform: translate(0, 6.7%);
-    height: 893px;
-    width: 636px;
-    background-size: 80% 80%;
+  .button2 {
+    padding: 15px 30px;
   }
   .section-2 {
     height: 1200px;
     padding-top: 450px;
-  }
-  .bg-container2 {
-    -webkit-transform: translate(0, -650px);
-            transform: translate(0, -650px);
-  }
-  .bg-pattern2 {
-    width: 250px;
-    height: 650px;
-    background-size: 100% 100%;
   }
   .section-2 h1 {
     margin-bottom: 110px;
@@ -1001,12 +960,12 @@ footer {
     height: 300px;
     background-size: auto 100%;
   }
-  .sec-3-content {
-    max-width: 710px;
-  }
   .section-3 a {
     padding: 15px 30px;
     letter-spacing: 0.1em;
+  }
+  .sec-3-content {
+    max-width: 710px;
   }
   footer {
     height: 520px;
