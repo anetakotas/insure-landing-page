@@ -27,12 +27,6 @@ nav {
   padding: 0 11%;
 }
 
-.links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,6 +49,12 @@ nav a {
 
 nav a:hover {
   color: #2b272f;
+}
+
+.links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .button1 {
@@ -96,6 +96,31 @@ nav a:hover {
   position: relative;
 }
 
+.section-1 h1 {
+  font-family: 'DM Serif Display', serif;
+  color: #fafafa;
+  font-size: 4.8em;
+  line-height: 0.9em;
+  font-weight: 400;
+}
+
+.section-1 h1:before {
+  content: '';
+  height: 1px;
+  width: 160px;
+  background-color: white;
+  display: block;
+  -webkit-transform: translate(0, -80px);
+          transform: translate(0, -80px);
+}
+
+.section-1 p {
+  color: #fafafa;
+  padding: 30px 0 40px 0;
+  font-size: 1.1em;
+  line-height: 1.6em;
+}
+
 .section-1:before {
   content: '';
   width: 15%;
@@ -132,31 +157,6 @@ nav a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-.section-1 h1 {
-  font-family: 'DM Serif Display', serif;
-  color: #fafafa;
-  font-size: 4.8em;
-  line-height: 0.9em;
-  font-weight: 400;
-}
-
-.section-1 h1:before {
-  content: '';
-  height: 1px;
-  width: 160px;
-  background-color: white;
-  display: block;
-  -webkit-transform: translate(0, -80px);
-          transform: translate(0, -80px);
-}
-
-.section-1 p {
-  color: #fafafa;
-  padding: 30px 0 40px 0;
-  font-size: 1.1em;
-  line-height: 1.6em;
 }
 
 .button2 {
@@ -240,12 +240,12 @@ nav a:hover {
           justify-content: space-between;
 }
 
-.advant-wrap {
-  width: 355px;
-}
-
 .sec-2-container svg {
   margin-bottom: 30px;
+}
+
+.advant-wrap {
+  width: 355px;
 }
 
 /* SECTION 3 */
@@ -270,6 +270,20 @@ nav a:hover {
   background-position: top right;
 }
 
+.section-3 a {
+  text-decoration: none;
+  color: #fafafa;
+  border: 1px #fafafa solid;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-3 a:hover {
+  color: #2d2640;
+  background-color: #fafafa;
+}
+
 .sec-3-content {
   font-family: 'DM Serif Display', serif;
   font-size: 4em;
@@ -285,20 +299,6 @@ nav a:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-.section-3 a {
-  text-decoration: none;
-  color: #fafafa;
-  border: 1px #fafafa solid;
-  padding: 10px 25px;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.section-3 a:hover {
-  color: #2d2640;
-  background-color: #fafafa;
 }
 
 /* FOOTER */
@@ -436,17 +436,6 @@ footer {
     background-position: top left;
     background-size: 50%;
   }
-  .section-1:before {
-    display: none;
-  }
-  .section-1:after {
-    display: block;
-    background-image: url(/images/bg-pattern-intro-right-mobile.svg);
-    background-repeat: no-repeat;
-    top: 80%;
-    background-position: top right;
-    background-size: 50%;
-  }
   .section-1 h1 {
     font-size: 2.7em;
     line-height: 1em;
@@ -458,11 +447,21 @@ footer {
     font-size: 1em;
     padding: 15px 0 40px 0;
   }
+  .section-1:before {
+    display: none;
+  }
+  .section-1:after {
+    display: block;
+    background-image: url(/images/bg-pattern-intro-right-mobile.svg);
+    background-repeat: no-repeat;
+    top: 75%;
+    background-position: top right;
+    width: 40%;
+  }
   .content-sec1 {
     text-align: center;
     margin-right: unset;
     padding-top: unset;
-    position: absolute;
   }
   .img-container {
     display: none;
@@ -481,14 +480,24 @@ footer {
   .section-2 h1:before {
     margin: 0 auto;
   }
-  .content-sec1 {
-    z-index: 2;
-  }
   .section-2 h1 {
     font-size: 2.8em;
     text-align: center;
     margin-top: 160px;
     margin-bottom: 80px;
+  }
+  .content-sec1 {
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .sec-2-container {
     -webkit-box-orient: vertical;
@@ -794,21 +803,19 @@ footer {
   .mobile-menu .button1 {
     background-color: unset;
     border-color: white;
-  }
-  .button1 {
     margin-left: 0;
   }
   .section-1 {
     height: 600px;
+  }
+  .section-1 h1 {
+    font-size: 3.8em;
   }
   .section-1:before {
     width: 20%;
   }
   .section-1:after {
     width: 42%;
-  }
-  .section-1 h1 {
-    font-size: 3.8em;
   }
   .img-container {
     display: none;
@@ -921,12 +928,12 @@ footer {
   .section-3 {
     height: 200px;
   }
-  .sec-3-content {
-    font-size: 3em;
-  }
   .section-3 a {
     font-size: 0.9em;
     padding: 10px 20px;
+  }
+  .sec-3-content {
+    font-size: 3em;
   }
 }
 
